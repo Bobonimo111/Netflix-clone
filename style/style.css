@@ -1,0 +1,31 @@
+:root {
+    --preto-claro: rgb(32, 32, 32);
+    --cinzinha: rgba(148, 148, 148, 0.596);
+    --vermelho: rgb(206, 40, 40);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--preto-claro);
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cabecalho p {
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--vermelho);
+    margin-left: 15px;
+}
+
+.cabecalho div {}
