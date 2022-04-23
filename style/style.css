@@ -1,7 +1,9 @@
 :root {
     --preto-claro: rgb(32, 32, 32);
-    --cinzinha: rgba(148, 148, 148, 0.596);
     --vermelho: rgb(206, 40, 40);
+    --branco: rgb(197, 197, 197);
+    --cinzinha: rgba(185, 185, 185, 0.596);
+    --cabecario: rgb(39, 39, 39);
 }
 
 * {
@@ -13,19 +15,43 @@
 
 body {
     background-color: var(--preto-claro);
+    color: var(--cinzinha);
 }
 
-.cabecalho {
+
+/*Header*/
+
+.cabecario {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: var(--cabecario);
 }
 
-.cabecalho p {
+.cabecario p {
     font-size: 50px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: var(--vermelho);
     margin-left: 15px;
 }
 
-.cabecalho div {}
+.cabecario div a {
+    margin-left: 10px;
+    margin-right: 20px;
+    color: var(--cinzinha);
+}
+
+.cabecario div a:hover {
+    color: var(--branco);
+}
+
+
+/*Recomendado*/
+
+.top-main {
+    display: flex;
+}
+
+.top-img img {
+    max-height: 350px;
+}
